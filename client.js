@@ -38,24 +38,7 @@ on('__cfx_nui:dialog_cancel', (data, cb) => {
 
 RegisterNuiCallbackType('ErrorSubmit');
 on('__cfx_nui:ErrorSubmit', (data, cb) => {
-    exports['es_extended'].DoHudText("error","МОЛЯ, ПОПЪЛНИ ПОЛЕТО");
+    //DoHudText("error","МОЛЯ, ПОПЪЛНИ ПОЛЕТО");
     cb({ ok: true });
 });
 exports('openDialog', openDialog);
-
-// RegisterCommand('testdialog', () => {
-//     exports[GetCurrentResourceName()].openDialog(
-//         {
-//             title: "Въведи сума",
-//             value: ""
-//         },
-//         (value) => {
-//             console.log("Submit:", value);
-//             exports['es_extended'].DoHudText("success",`✅ Въведохте: ${value}`);
-//             // Ако искаш, можеш да trigger-неш сървър събитие тук
-//         },
-//         () => {
-//             console.log("Cancelled");
-//         }
-//     )
-// }, false);
