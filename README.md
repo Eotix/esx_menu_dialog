@@ -1,6 +1,9 @@
 # esx_menu_default
 Standalone версия
-    exports['esx_menu_dialog']:openDialog(
+
+
+-----------------------------------
+   exports['esx_menu_dialog']:openDialog(
         {
             title = "Въведи сума",
             value = ""
